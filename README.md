@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fusayfisa — mosaic atelier site
 
-## Getting Started
-
-First, run the development server:
+A one-page portfolio and commission site for hand-laid mosaic work (Next.js 16, Tailwind 4).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev     # http://localhost:3000
+npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Languages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site is available in Portuguese (`/pt`, the default: `/` redirects there), English (`/en`) and French (`/fr`). All text, including photo captions, is in `src/i18n/`, with one file per language. `en.ts` defines the structure, so TypeScript reports any text missing from `pt.ts` or `fr.ts`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Editing
 
-## Learn More
+- **Name, contact details, WhatsApp number:** `src/lib/site.ts` (the phone, email and WhatsApp values are placeholders).
+- **Photos:** images live in `public/works/` as `<category>-NN.jpg`, and their sizes are listed in `src/data/works.json`. To add a photo, put it in `public/works/`, add an entry with its width and height to `works.json`, and give it a caption under `titles` in each language file.
+- **Sections:** `src/components/` (Hero, Services, Featured, Gallery, Process, Contact).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The quote form doesn't need a backend. It opens WhatsApp, or the visitor's email app, with the message already written.
