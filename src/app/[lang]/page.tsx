@@ -57,10 +57,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               <dl className="mt-12 space-y-6">
                 {[
                   [t.contact.phone, site.phone, `tel:${site.phone.replace(/\s/g, "")}`],
-                  [t.contact.email, site.email, `mailto:${site.email}`],
                   [t.contact.basedIn, t.city, null],
                 ].map(([k, v, href]) => (
-                  <div key={k} className="flex gap-6 border-b border-paper/10 pb-6">
+                  <div key={k} className="flex items-baseline gap-6 border-b border-paper/10 pb-6">
                     <dt className="w-28 shrink-0 text-sm font-semibold uppercase tracking-wider text-ochre">{k}</dt>
                     <dd className="text-lg">
                       {href ? (
@@ -87,16 +86,12 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
       <footer className="bg-ink text-paper/60">
         <Tesserae seed={5} rows={1} className="opacity-80" />
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 text-sm sm:flex-row sm:px-8">
+        <div className="mx-auto max-w-7xl px-5 py-8 text-center text-sm sm:px-8">
           <p>
             <span className="font-display text-base font-semibold text-paper">{site.name}</span>
             <span className="font-arabic ml-2 text-ochre">{site.arabicName}</span>
             <span className="ml-3">{t.tagline}</span>
           </p>
-          <div className="flex gap-6">
-            <a href={site.instagram} className="hover:text-ochre">Instagram</a>
-            <a href={site.facebook} className="hover:text-ochre">Facebook</a>
-          </div>
         </div>
       </footer>
     </>

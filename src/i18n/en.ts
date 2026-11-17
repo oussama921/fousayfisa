@@ -4,7 +4,7 @@ const en = {
     description:
       "Hand-laid mosaic for gardens, homes and public spaces. Garden paths, bathrooms, wall panels, planters and relief work, made to order.",
   },
-  city: "Tunisia",
+  city: "Lisbon",
   tagline: "Hand-laid mosaic for gardens, homes and public spaces",
   nav: {
     services: "Services",
@@ -82,7 +82,6 @@ const en = {
     title: "Have a wall, a path or an idea?",
     lead: "Describe your project and I will reply with questions, ideas and a quote. Photos of the space help a lot; you can send them once we are talking.",
     phone: "Phone",
-    email: "Email",
     basedIn: "Based in",
   },
   form: {
@@ -96,12 +95,10 @@ const en = {
     message: "Tell me about it",
     messagePh: "Size of the area, colours you like, a photo you can send later…",
     whatsapp: "Send on WhatsApp",
-    email: "or send by email",
     msgHello: "Hello, I'm {name}.",
     msgProject: "Project: {type}",
     msgLocation: "Location: {place}",
     msgReach: "You can reach me at {phone}.",
-    subject: "Mosaic commission: {type}",
   },
   categories: {
     garden: { label: "Gardens & Paths", blurb: "Flowing walkways, terraces and courtyards in natural stone." },

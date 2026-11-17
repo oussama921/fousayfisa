@@ -6,7 +6,7 @@ const fr: Dict = {
     description:
       "Mosaïque posée à la main pour jardins, maisons et espaces publics. Allées, salles de bain, panneaux muraux, jardinières et reliefs, réalisés sur commande.",
   },
-  city: "Tunisie",
+  city: "Lisbonne",
   tagline: "Mosaïque faite main pour jardins, maisons et espaces publics",
   nav: {
     services: "Services",
@@ -84,8 +84,7 @@ const fr: Dict = {
     title: "Un mur, une allée ou une idée ?",
     lead: "Décrivez votre projet et je vous répondrai avec des questions, des idées et un devis. Des photos de l’espace aident beaucoup ; vous pourrez les envoyer une fois la conversation lancée.",
     phone: "Téléphone",
-    email: "Email",
-    basedIn: "Basé en",
+    basedIn: "Basé à",
   },
   form: {
     name: "Votre nom",
@@ -98,12 +97,10 @@ const fr: Dict = {
     message: "Parlez-moi du projet",
     messagePh: "Surface, couleurs que vous aimez, une photo à envoyer plus tard…",
     whatsapp: "Envoyer sur WhatsApp",
-    email: "ou envoyer par email",
     msgHello: "Bonjour, je m’appelle {name}.",
     msgProject: "Projet : {type}",
     msgLocation: "Lieu : {place}",
     msgReach: "Vous pouvez me joindre au {phone}.",
-    subject: "Commande de mosaïque : {type}",
   },
   categories: {
     garden: { label: "Jardins & allées", blurb: "Allées, terrasses et cours fluides en pierre naturelle." },

@@ -20,7 +20,7 @@ export function Featured({ t }: { t: Dict }) {
           </p>
           <ul className="mt-10 space-y-4 border-t border-paper/15 pt-8 text-paper/80">
             {t.featured.facts.map(([k, v]) => (
-              <li key={k} className="flex gap-6">
+              <li key={k} className="flex items-baseline gap-6">
                 <span className="w-24 shrink-0 text-sm font-semibold uppercase tracking-wider text-ochre">{k}</span>
                 <span>{v}</span>
               </li>

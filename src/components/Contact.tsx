@@ -24,7 +24,6 @@ export function Contact({ categories, t }: { categories: CategoryInfo[]; t: Dict
     .join("\n");
 
   const whatsapp = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(body)}`;
-  const mailto = `mailto:${site.email}?subject=${encodeURIComponent(fill(t.subject, { type: form.type }))}&body=${encodeURIComponent(body)}`;
 
   return (
     <form
@@ -40,7 +39,7 @@ export function Contact({ categories, t }: { categories: CategoryInfo[]; t: Dict
       </label>
       <label>
         <span className="mb-2 block text-sm font-semibold text-paper/70">{t.phone}</span>
-        <input value={form.phone} onChange={set("phone")} className={field} placeholder="+216 …" inputMode="tel" />
+        <input value={form.phone} onChange={set("phone")} className={field} placeholder="+351 …" inputMode="tel" />
       </label>
       <label>
         <span className="mb-2 block text-sm font-semibold text-paper/70">{t.type}</span>
@@ -72,9 +71,6 @@ export function Contact({ categories, t }: { categories: CategoryInfo[]; t: Dict
         >
           {t.whatsapp}
         </button>
-        <a href={mailto} className="font-semibold text-paper/80 underline-offset-4 hover:text-ochre hover:underline">
-          {t.email}
-        </a>
       </div>
     </form>
   );

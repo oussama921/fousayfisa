@@ -6,7 +6,7 @@ const pt: Dict = {
     description:
       "Mosaico assente à mão para jardins, casas e espaços públicos. Caminhos de jardim, casas de banho, painéis, vasos e relevos, feitos por encomenda.",
   },
-  city: "Tunísia",
+  city: "Lisboa",
   tagline: "Mosaico feito à mão para jardins, casas e espaços públicos",
   nav: {
     services: "Serviços",
@@ -84,7 +84,6 @@ const pt: Dict = {
     title: "Tem uma parede, um caminho ou uma ideia?",
     lead: "Descreva o seu projeto e respondo com perguntas, ideias e um orçamento. Fotografias do espaço ajudam muito; pode enviá-las quando já estivermos a conversar.",
     phone: "Telefone",
-    email: "Email",
     basedIn: "Sediado em",
   },
   form: {
@@ -98,12 +97,10 @@ const pt: Dict = {
     message: "Fale-me do projeto",
     messagePh: "Dimensão da área, cores de que gosta, uma fotografia que pode enviar mais tarde…",
     whatsapp: "Enviar por WhatsApp",
-    email: "ou enviar por email",
     msgHello: "Olá, chamo-me {name}.",
     msgProject: "Projeto: {type}",
     msgLocation: "Local: {place}",
     msgReach: "Pode contactar-me através do {phone}.",
-    subject: "Encomenda de mosaico: {type}",
   },
   categories: {
     garden: { label: "Jardins e caminhos", blurb: "Caminhos, terraços e pátios fluidos em pedra natural." },
